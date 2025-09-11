@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+my:
+  mood:
+    today: 周五
+    content: 期待周末
+    author: "张珂"
+
+#功能开关
+  feature:
+    helloSwitch: false
+    closeMsg: "该接口正在维护，10分钟后再来吧！"
+
+keke:
+  sms:
+    ccp:
+      serverIp: app.cloopen.com
+      port: 8883
+      accountSId: 2c94811c9860a9c401991c530e79203a
+      accountToken: 66b711b1f09b49e8b57507a317aa4c28
+      appId: 2c94811c9860a9c401991c530ffc2041
+      templateId: 1

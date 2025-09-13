@@ -1,10 +1,16 @@
 package top.keke.model;
+import top.keke.Service.MailService;// 根据实际包路径调整
 
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.mock.web.MockMultipartFile;
+import org.springframework.util.FileCopyUtils;
+import org.springframework.web.multipart.MultipartFile;
 import top.keke.model.Team;
+
+import java.io.File;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -21,6 +27,7 @@ class TeamTest {
 
   @Test
   void textTeam2() {
-    assertEquals("xym99", team.getLeader());
+    assertEquals("keke", team.getLeader());
   }
+
 }
